@@ -47,3 +47,6 @@ xhr.onload = () => {
   }
 };
 xhr.send();
+
+// @TODO: We should just resubmit the AJAX request but this will do for the prototype
+const refresher = window.setTimeout(function() { window.location.reload(true); }, (60 * 1000));
