@@ -1,0 +1,14 @@
+{
+  "team0": {
+    "vm-1234": "Team0-Clients",
+    "vm-1235": "Coffee-Ballys"
+  },
+  "team1": {
+    "vm-1236": "Team1-Clients",
+    "vm-1237": "Coffee-Riviera"
+  },
+  "team2": {
+    "vm-4567": "Team2-Clients",
+    "vm-5678": "Coffee-Alexis"
+  }
+}
