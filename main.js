@@ -1,5 +1,5 @@
 var xhr = new XMLHttpRequest();
-xhr.open('GET', '/api-placeholder-response.json');
+xhr.open('GET', 'api-placeholder-response.json');
 xhr.onload = () => {
   if (xhr.status === 200) {
     const response = JSON.parse(xhr.responseText);
