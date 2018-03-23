@@ -7,8 +7,15 @@ function rtdFetchReport() {
   // try again.
   if (window.rtdRefreshing) { return; }
 
+  let path = 'http://127.0.0.1/all';
+
+  // Visit #test to load the sample data
+  if (window.location.hash.indexOf("test") > -1) {
+    path = 'api-placeholder-response.json';
+  }
+
   const xhr = new XMLHttpRequest();
-  xhr.open('GET', 'api-placeholder-response.json');
+  xhr.open('GET', path);
   xhr.addEventListener("load", rtdBuildReport);
 
   window.rtdRefreshing = true;
