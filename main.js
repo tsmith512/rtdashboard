@@ -16,7 +16,10 @@ function rtdFetchReport() {
 
   const xhr = new XMLHttpRequest();
   xhr.open('GET', path);
+
   xhr.addEventListener("load", rtdBuildReport);
+  xhr.addEventListener("timeout", (e) => { console.log(e); rtdClearFlag(); })
+  xhr.addEventListener("error", (e) => { console.log(e); rtdClearFlag(); })
 
   window.rtdRefreshing = true;
   console.log("updating: " + new Date().toLocaleString());
@@ -79,8 +82,12 @@ function rtdBuildReport() {
     });
 
     // Unset the flag so we know it's safe to update again.
-    window.rtdRefreshing = false;
+    rtdClearFlag();
   } else {
     alert('API did not provide a response: HTTP' . xhr.status);
   }
+}
+
+function rtdClearFlag() {
+  window.rtdRefreshing = false;
 }
