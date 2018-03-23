@@ -1,6 +1,25 @@
-var xhr = new XMLHttpRequest();
-xhr.open('GET', 'api-placeholder-response.json');
-xhr.onload = () => {
+const refresher = window.setTimeout(function() { rtdFetchReport(); }, (60 * 1000));
+window.rtdRefreshing = false;
+rtdFetchReport();
+
+function rtdFetchReport() {
+  // This endpoint takes a while to respond, if we're already waiting, don't
+  // try again.
+  if (window.rtdRefreshing) { return; }
+
+  const xhr = new XMLHttpRequest();
+  xhr.open('GET', 'api-placeholder-response.json');
+  xhr.addEventListener("load", rtdBuildReport);
+
+  window.rtdRefreshing = true;
+  console.log("updating: " + new Date().toLocaleString());
+
+  xhr.send();
+}
+
+function rtdBuildReport() {
+  const xhr = this;
+
   if (xhr.status === 200) {
     const response = JSON.parse(xhr.responseText);
 
@@ -30,9 +49,13 @@ xhr.onload = () => {
       }
     }
 
+    // We may be "refreshing" the table, empty it first.
+    document.getElementById("report").innerHTML = null;
+
     report.forEach((line) => {
       const table = document.getElementById("report");
       const row = table.insertRow(-1);
+
 
       // So we can style coffee shop "attendees" and also I don't know if the
       // SSIDs will be capitalized like the API sample or not
@@ -47,11 +70,10 @@ xhr.onload = () => {
         cell.appendChild(value);
       });
     });
+
+    // Unset the flag so we know it's safe to update again.
+    window.rtdRefreshing = false;
   } else {
     alert('API did not provide a response: HTTP' . xhr.status);
   }
-};
-xhr.send();
-
-// @TODO: We should just resubmit the AJAX request but this will do for the prototype
-const refresher = window.setTimeout(function() { window.location.reload(true); }, (60 * 1000));
+}
