@@ -8,19 +8,19 @@ xhr.onload = () => {
     const report = [];
 
     // If this ain't quick and dirty, I don't know what is:
-    for (const team in response) {
-      if (! response.hasOwnProperty(team)) {
-        continue;
-      }
+    for (let i = 0; i < response.length; i++) {
 
-      for (const computer in response[team]) {
-        if (! response[team].hasOwnProperty(computer)) {
-          continue;
-        }
+      // team = {"Key": "team-name", "Value": [{...machines...}]}
+      let team = response[i];
 
-        let teamName = team;
-        let computerName = computer;
-        let computerNetwork = response[team][computer];
+      for (let j = 0; j < team.Value.length; j++) {
+
+        // computer = {"Key": "computer-name", "Value": "network-name"}
+        let computer = team.Value[j];
+
+        let teamName = team.Key;
+        let computerName = computer.Key;
+        let computerNetwork = computer.Value;
 
         // @TODO: Currently, non-coffee-shop computers are displayed but greyed
         // out. If we wanted to filter them out completely, here would be the

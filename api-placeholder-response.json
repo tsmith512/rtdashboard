@@ -1,14 +1,163 @@
-{
-  "team0": {
-    "vm-1234": "Team0-Clients",
-    "vm-1235": "Coffee-Ballys"
-  },
-  "team1": {
-    "vm-1236": "Team1-Clients",
-    "vm-1237": "Coffee-Riviera"
-  },
-  "team2": {
-    "vm-4567": "Team2-Clients",
-    "vm-5678": "Coffee-Alexis"
-  }
-}
+[{
+  "Key": "team0",
+  "Value": [{
+    "Key": "vm-1661",
+    "Value": "DPortGroup-Team0-Clients"
+  }, {
+    "Key": "vm-1689",
+    "Value": "DPortGroup-Team0-Clients"
+  }, {
+    "Key": "vm-1690",
+    "Value": "DPortGroup-Team0-Clients"
+  }, {
+    "Key": "vm-1691",
+    "Value": "DPortGroup-Team0-Clients"
+  }, {
+    "Key": "vm-1692",
+    "Value": "DPortGroup-Team0-Clients"
+  }]
+}, {
+  "Key": "team1",
+  "Value": [{
+    "Key": "vm-1825",
+    "Value": "DPortGroup-Team1-Clients"
+  }, {
+    "Key": "vm-1826",
+    "Value": "DPortGroup-Team1-Clients"
+  }, {
+    "Key": "vm-1827",
+    "Value": "DPortGroup-Team1-Clients"
+  }, {
+    "Key": "vm-1828",
+    "Value": "DPortGroup-Team1-Clients"
+  }, {
+    "Key": "vm-1829",
+    "Value": "DPortGroup-Team1-Clients"
+  }]
+}, {
+  "Key": "team2",
+  "Value": [{
+    "Key": "vm-1832",
+    "Value": "DPortGroup-Team2-Clients"
+  }, {
+    "Key": "vm-1833",
+    "Value": "DPortGroup-Team2-Clients"
+  }, {
+    "Key": "vm-1834",
+    "Value": "DPortGroup-Team2-Clients"
+  }, {
+    "Key": "vm-1835",
+    "Value": "DPortGroup-Team2-Clients"
+  }, {
+    "Key": "vm-1836",
+    "Value": "DPortGroup-Team2-Clients"
+  }]
+}, {
+  "Key": "team3",
+  "Value": [{
+    "Key": "vm-1837",
+    "Value": "DPortGroup-Team3-Clients"
+  }, {
+    "Key": "vm-1838",
+    "Value": "DPortGroup-Team3-Clients"
+  }, {
+    "Key": "vm-1839",
+    "Value": "DPortGroup-Team3-Clients"
+  }, {
+    "Key": "vm-1840",
+    "Value": "DPortGroup-Team3-Clients"
+  }, {
+    "Key": "vm-1841",
+    "Value": "DPortGroup-Team3-Clients"
+  }]
+}, {
+  "Key": "team4",
+  "Value": [{
+    "Key": "vm-1842",
+    "Value": "DPortGroup-Team4-Clients"
+  }, {
+    "Key": "vm-1843",
+    "Value": "DPortGroup-Team4-Clients"
+  }, {
+    "Key": "vm-1844",
+    "Value": "DPortGroup-Team4-Clients"
+  }, {
+    "Key": "vm-1845",
+    "Value": "DPortGroup-Team4-Clients"
+  }, {
+    "Key": "vm-1846",
+    "Value": "DPortGroup-Team4-Clients"
+  }]
+}, {
+  "Key": "team5",
+  "Value": [{
+    "Key": "vm-1847",
+    "Value": "DPortGroup-Team5-Clients"
+  }, {
+    "Key": "vm-1848",
+    "Value": "DPortGroup-Team5-Clients"
+  }, {
+    "Key": "vm-1849",
+    "Value": "DPortGroup-Team5-Clients"
+  }, {
+    "Key": "vm-1850",
+    "Value": "DPortGroup-Team5-Clients"
+  }, {
+    "Key": "vm-1851",
+    "Value": "DPortGroup-Team5-Clients"
+  }]
+}, {
+  "Key": "team6",
+  "Value": [{
+    "Key": "vm-1852",
+    "Value": "DPortGroup-Team6-Clients"
+  }, {
+    "Key": "vm-1853",
+    "Value": "DPortGroup-Team6-Clients"
+  }, {
+    "Key": "vm-1854",
+    "Value": "DPortGroup-Team6-Clients"
+  }, {
+    "Key": "vm-1855",
+    "Value": "DPortGroup-Team6-Clients"
+  }, {
+    "Key": "vm-1856",
+    "Value": "DPortGroup-Team6-Clients"
+  }]
+}, {
+  "Key": "team7",
+  "Value": [{
+    "Key": "vm-1857",
+    "Value": "DPortGroup-Team7-Clients"
+  }, {
+    "Key": "vm-1858",
+    "Value": "DPortGroup-Team7-Clients"
+  }, {
+    "Key": "vm-1859",
+    "Value": "DPortGroup-Team7-Clients"
+  }, {
+    "Key": "vm-1860",
+    "Value": "DPortGroup-Team7-Clients"
+  }, {
+    "Key": "vm-1861",
+    "Value": "DPortGroup-Team7-Clients"
+  }]
+}, {
+  "Key": "team8",
+  "Value": [{
+    "Key": "vm-1862",
+    "Value": "DPortGroup-Team8-Clients"
+  }, {
+    "Key": "vm-1863",
+    "Value": "DPortGroup-Team8-Clients"
+  }, {
+    "Key": "vm-1864",
+    "Value": "DPortGroup-Team8-Clients"
+  }, {
+    "Key": "vm-1865",
+    "Value": "DPortGroup-Team8-Clients"
+  }, {
+    "Key": "vm-1866",
+    "Value": "DPortGroup-Team8-Clients"
+  }]
+}]
